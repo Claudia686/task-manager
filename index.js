@@ -17,7 +17,7 @@ const todoItems = [
 ]
 
 // Add some completed items
-const completedItems = [
+let completedItems = [
   {
     name: 'start tutorial',
     dueDate: '2024-2-28'
@@ -35,7 +35,6 @@ const renderTodoItems = () => {
       <button class="delete-button">&times;</button>
       <button class="complete-button">&check;</button>
     `
-
     todoListHTML += itemHTML
   })
 
@@ -67,6 +66,13 @@ const renderTodoItems = () => {
       renderTodoItems()
       renderCompletedItems()
     })
+  })
+ 
+  // Clear completed Tasks
+  document.querySelector('.clear-completed-button').addEventListener('click', () => {
+    completedItems = []
+    renderCompletedItems()
+
   })
 }
 

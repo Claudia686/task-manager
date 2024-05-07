@@ -111,3 +111,21 @@ button:active {
 .create-button:hover, .delete-button:hover, .complete-button:hover {
   background-color: #333;
 }
+
+.clear-completed-button {
+    display: block; 
+    width: calc(50% - 70px);
+    margin: 20px auto; 
+    padding: 10px 0; 
+    background-color: green; 
+    color: white; 
+   
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.clear-completed-button:hover {
+    background-color: #cc0000; 
+}
